@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tag Cloud</title>
+</head>
+
+<body>
+{% block body %}{% endblock %}
+<script>
+function showDetails(linelist) {
+    var linelist1 = linelist.getAttribute("data-linelist");
+	var array = JSON.parse(linelist1)
+    alert(array.join("\n"));
+}
+</script>
+</body>
+
+</html>

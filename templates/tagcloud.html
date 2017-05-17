@@ -1,0 +1,101 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tag Cloud</title>
+</head>
+
+<body>
+
+      <ul style="list-style: none;">
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='[]' style="font-size:21px;">('text', 'line')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('number', 'words')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 1: This is dummy text. \r\n", "Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('text', 'dummy')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('word', 'text')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('words', 'print')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='[]' style="font-size:21px;">('line', 'dummy')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='[]' style="font-size:21px;">('didnt', 'will')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:30px;">('text', 'file')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('frequency', 'word')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('will', 'search')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='[]' style="font-size:21px;">('line', 'text')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 1: This is dummy text. \r\n", "Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('text', 'text')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('search', 'number')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('dummy', 'frequency')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 1: This is dummy text. \r\n", "Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:30px;">('dummy', 'text')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('seach', 'dummy')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('print', 'dummy')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='[]' style="font-size:21px;">('file', 'didnt')</a>
+        </li>
+      
+        <li style="display: inline;">
+            <a onclick="showDetails(this)" data-linelist='["Line 3: In this text file we didn\u0027t will search for number of words and then print the dummy frequency of each word. Text dummy seach dummy text in this text file.\r\n"]' style="font-size:21px;">('dummy', 'seach')</a>
+        </li>
+      
+      </ul>
+
+    
+<script>
+function showDetails(linelist) {
+    var linelist1 = linelist.getAttribute("data-linelist");
+	var array = JSON.parse(linelist1)
+    alert(array.join("\n"));
+}
+</script>
+</body>
+
+</html>
