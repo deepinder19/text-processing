@@ -29,7 +29,7 @@ def create_tag_cloud():
     This function displays in html tag cloud of words read from file
     and lines in which the word appears
     """
-	
+    
     freq_dict = word_freq2('demo.txt', 'noise_words.txt')
 
     word_font_list = get_word_font_list(freq_dict, 'demo.txt')
