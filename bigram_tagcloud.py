@@ -38,7 +38,7 @@ def create_tag_cloud():
       <ul style="list-style: none;">
       {% for word in word_font_list %}
         <li style="display: inline;">
-            <a onclick="showDetails(this)" data-linelist='{{word_font_list[word][1]|tojson|safe}}' style="font-size:{{word_font_list[word][0]}}px;">{{word}}</a>
+            <a onclick="showDetails(this)" data-linelist='{{word_font_list[word][1]|tojson|safe}}' style="font-size:{{word_font_list[word][0]}}px;">{{word[0]}}{{word[1]}}</a>
         </li>
       {% endfor %}
       </ul>
