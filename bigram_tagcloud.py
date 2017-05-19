@@ -17,7 +17,7 @@ def get_word_font_list(freq_dict, file_path):
     with open(file_path, 'r') as f_obj:
         for line in f_obj:
             for key, value in word_font_dict.items():
-                if key[0] in line and key[1] in line:
+                if key[0] in line.lower() and key[1] in line.lower():
                      word_font_dict[key][1].append(line)
     return word_font_dict
 
